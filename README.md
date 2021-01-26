@@ -1,10 +1,10 @@
 # Regex
 Haskel implementation of python's regex  
-Compile with ```ghc --make projectMain.hs```
+Compile with ```ghc --make main.hs regex.hs```
 ## Functions
 ### getRegEx
 takes a String representation of a regular expression and prints a list of a regex datatype  
-```./projectMain getRegEx "[1-4][6-8] H*l+o.."```  
+```./main getRegEx "[1-4][6-8] H*l+o.."```  
 
 Valid String metacharacters include
 - '^': Starts with 
@@ -27,8 +27,8 @@ Valid String metacharacters include
   
 ### Search
 Search a file and return the number of regular expression matches  
-```./projectMain Search “37 HHHlllozz” test.txt```  
+```./main Search “37 HHHlllozz” test.txt```  
 
 ### Generate
 Generates a random string that matches the regular expression.  
-```./projectMain Generate "[1-4][6-8] H*l+o.."```
+```./main Generate "[1-4][6-8] H*l+o.."```
